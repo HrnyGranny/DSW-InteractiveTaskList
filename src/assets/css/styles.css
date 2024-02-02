@@ -1,0 +1,57 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ecf0f3; /* Cambiado a un color suave */
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff; /* Blanco */
+    padding: 40px; /* Aumentado el tamaño del contenedor */
+    border-radius: 16px; /* Aumentado el radio de las esquinas */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 80%; /* Ajusta el ancho del contenedor según tu preferencia */
+    max-width: 600px; /* Agregado un ancho máximo para evitar que se vuelva demasiado ancho en pantallas grandes */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+#taskForm {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    width: 70%; /* Ajusta el ancho del input según tu preferencia */
+    padding: 16px; /* Aumentado el tamaño del input */
+    margin-right: 16px; /* Aumentado el espacio a la derecha del input */
+}
+
+button {
+    width: 25%; /* Ajusta el ancho del botón según tu preferencia */
+    padding: 16px; /* Aumentado el tamaño del botón */
+    cursor: pointer;
+    background-color: #3498db; /* Azul suave */
+    color: #ffffff; /* Texto blanco */
+    border: none;
+    border-radius: 8px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#emptyTaskMessage {
+    color: #e74c3c; /* Rojo suave */
+    margin-top: 10px;
+}
