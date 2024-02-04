@@ -1,0 +1,72 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #ecf0f3;
+}
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px; /* Aumentado el ancho máximo */
+    margin: 0 auto;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan si no caben en la misma línea */
+    justify-content: space-between;
+}
+
+input, select, button {
+    width: 30%; /* Ajustado el ancho de los elementos en el formulario */
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    margin-bottom: 10px; /* Añadido margen entre las tareas */
+}
+
+.hidden {
+    display: none;
+}
+
+#emptyTaskMessage {
+    color: #e74c3c;
+    margin-top: 10px;
+}
+
+.low-priority {
+    background-color: #2ecc71;
+}
+
+.medium-priority {
+    background-color: #f1c40f;
+}
+
+.high-priority {
+    background-color: #e74c3c;
+}

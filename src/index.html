@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Lista de Tareas</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+        
+        <div id="taskForm" class="form-container">
+            <input type="text" id="taskInput" placeholder="Ingrese una nueva tarea">
+            <select id="taskPriority">
+                <option value="low">Baja</option>
+                <option value="medium">Media</option>
+                <option value="high">Alta</option>
+            </select>
+            <input type="text" id="taskCategory" placeholder="Categoría">
+            <button onclick="addTask()">Añadir Tarea</button>
+        </div>
+
+        <ul id="taskList" class="task-list"></ul>
+        
+        <div id="taskOptions" class="form-container" style="display: none;">
+            <input type="text" id="editTaskInput" placeholder="Editar tarea">
+            <input type="text" id="editTaskCategory" placeholder="Nueva categoría">
+            <select id="editPriority">
+                <option value="low">Baja</option>
+                <option value="medium">Media</option>
+                <option value="high">Alta</option>
+            </select>
+            <button onclick="editTask()">Guardar Cambios</button>
+            <button onclick="deleteTask()">Eliminar Tarea</button>
+        </div>
+
+        <p id="emptyTaskMessage" class="hidden">Por favor, ingrese una tarea válida.</p>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
